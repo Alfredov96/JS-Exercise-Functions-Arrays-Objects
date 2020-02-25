@@ -39,8 +39,14 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+ console.log(makePersonObject)
+  return {
+     id: 5,
+     name: 'fredo',
+    email: 'fredo@gmail.com'
+  }
+ 
 }
 
 /**
@@ -56,8 +62,12 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+ function getName(person) {
+  
+  console.log(person.name)     
+
+  return `hello my name is ${person.name}`
+      
 }
 
 /**
@@ -73,8 +83,14 @@ function getName(/* code here */) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(name) {
+  return {
+    name: name,
+    sum: function(num1, num2){return num1 + num2},
+    speak: function(){return  `hello, my name is ${name}`}
+
+  }
+
 }
 
 
@@ -136,7 +152,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  return `this is a ${inventory[index].car_make} ${inventory[index].car_model}`
 }
 
 /**
@@ -244,7 +260,7 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
+/*const sum = null; // code here!
 const addFive = null; // code here!
 const argTimesTwo = null; // code here!
 
